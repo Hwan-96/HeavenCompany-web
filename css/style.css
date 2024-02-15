@@ -1,0 +1,50 @@
+@import url(common.css);
+@import url(header.css);
+
+/* Intro */
+#intro_wrap{
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d0d0d;
+}
+
+#intro_wrap .intro_wrap-inner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro_wrap .load-counter{
+  text-align: center;
+  position: relative;
+  width: 200px;
+}
+
+#intro_wrap .load-counter p{
+  font-size: 40px;
+  font-weight: 100;
+  color: #f60d54;
+}
+
+#intro_wrap .load-counter h1{
+  font-size: 60px;
+  margin-top: -10px;
+  color: #fff;
+}
+
+#intro_wrap .load-counter hr{
+  background-color: #f60d54;
+  border: none;
+  height: 1px;
+}
+
+/* Wrap */
+#wrap{
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  /* display: none; */
+}
+

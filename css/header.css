@@ -1,0 +1,51 @@
+header{
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #000;
+  width: 90%;
+  position: relative;
+}
+
+header .navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .navbar .nav-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-btn .line{
+  margin: 7px 0;
+  transition: transform .4s;
+  background-color: transparent !important;
+}
+
+.menu-btn .line, .menu-btn .line::after, .menu-btn .line::before{
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  transition: transform .4s;
+  background-color: #050505;
+}
+.right-wrap{
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.right-wrap .menu-btn-wrap{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+}
