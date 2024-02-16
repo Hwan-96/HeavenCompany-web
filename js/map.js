@@ -155,7 +155,7 @@ window.initMap = function () {
     map: map,
     // label: "헤븐컴퍼니",
     icon: {
-      url: '../images/LOGO_S.png',
+      url: '../images/logos/LOGO_S.png',
       scaledSize: new google.maps.Size(40, 60),
     },
   });
