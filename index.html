@@ -30,6 +30,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <script defer type="module" src="js/env.js"></script>
+  <script defer type="module" src="js/map.js"></script>
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -197,18 +200,6 @@
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <!-- <script src="js/intro.js"></script> -->
-  <script defer src="js/env.js"></script>
-  <script
-  defer
-  src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"
-  ></script>
-  <script defer src="js/map.js"></script>
-  <!-- <script defer>
-    // env.js 파일에서 API 키를 가져와서 사용
-    const script = document.createElement('script');
-    script.defer = true;
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initMap`;
-    document.head.appendChild(script);
-  </script> -->
+  
 </body>
 </html>
