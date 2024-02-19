@@ -41,7 +41,7 @@ $(document).ready(function() {
   var counter = 0;
   var c = 0;
   var i = setInterval(function(){
-      $("#intro_wrap .load-counter h1").html(c + "%");
+      $("#intro_wrap .load-counter h2").html(c + "%");
       $("#intro_wrap .load-counter hr").css("width", c + "%");
       // $("#intro_wrap .load-counter").css("background", "linear-gradient(to right, #f60d54 "+ c + "%,#0d0d0d "+ c + "%)");
     counter++;
