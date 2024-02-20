@@ -39,6 +39,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -203,7 +204,7 @@
 
     <main>
       <section>
-        <div class="swiper mySwiper">
+        <div class="swiper Swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
@@ -222,12 +223,19 @@
       </section>
 
       <section class="section section1">
-        <div class="gird-container">
-          <div class="grid-content">
-            <img src="images/logos/apple-icon-180x180.png" alt="">
+        <div class="grid-container">
+          <div class="grid-content"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="top-center">
+            <img src="images/main01.png" alt="">
           </div>
-          <div class="grid-content">
-            <p class="grid-desk">
+
+          <div class="grid-content"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="top-center">
+            <p class="grid-title">
               <span class="xx-large bolder">헤븐컴퍼니,</span>
               <span class="xx-large bolder">프라이빗 투자그룹</span>
               <span class="x-large">
@@ -238,30 +246,587 @@
               </a>
             </p>
           </div>
+
           <div class="grid-content grid-none">
             <!-- <img src="images/logos/apple-icon-180x180.png" alt=""> -->
           </div>
-          <div class="grid-content">
-            <img src="images/logos/apple-icon-180x180.png" alt="">
+
+          <div class="grid-content"
+          data-aos="fade-up-left"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="top-center">
+            <img src="images/main02.png" alt="">
+            <p class="grid-desc large desc-odd">
+              누적수익률
+              <strong class="xx-large bolder">4581.3&#37;</strong>
+            </p>
           </div>
-          <div class="grid-content">
-            <img src="images/logos/apple-icon-180x180.png" alt="">
+
+          <div class="grid-content"
+          data-aos="fade-down-right"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="bottom-bottom">
+            <img src="images/main03.png" alt="">
+            <p class="grid-desc large desc-even">
+              적중률
+              <strong class="xx-large bolder">92.84&#37;</strong>
+            </p>
           </div>
+
           <div class="grid-content grid-none">
             <!-- <img src="images/logos/apple-icon-180x180.png" alt=""> -->
           </div>
+
           <div class="grid-content grid-none">
             <!-- <img src="images/logos/apple-icon-180x180.png" alt=""> -->
           </div>
-          <div class="grid-content">
-            <img src="images/logos/apple-icon-180x180.png" alt="">
+
+          <div class="grid-content"
+          data-aos="fade-down-left"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="center-center">
+            <img src="images/main04.png" alt="">
+            <p class="grid-desc large desc-odd">
+              평균수익률
+              <strong class="xx-large bolder">218.8&#37;</strong>
+            </p>
+          </div>
+          <div class="grid-content"
+          data-aos="fade-down-right"
+          data-aos-easing="ease-in-sine"
+          data-aos-anchor-placement="bottom-bottom">
+            <img src="images/main05.png" alt="">
+            <p class="grid-desc large desc-even">
+              누적회원수
+              <strong class="xx-large bolder">643,318명</strong>
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section section2"></section>
-      <section class="section section3"></section>
-      <section class="section section4"></section>
+      <section class="section section2">
+        <div class="section2-wrap">
+          <ul class="metaphor-icon-all">
+            <li class="metaphor-icon-bundle">
+              <ul>
+                <li class="metaphor-icon">
+                  <img src="images/vip_icon1.png" alt="">
+                </li>
+                <li class="metaphor-desc">설명</li>
+              </ul>
+            </li>
+            <li class="metaphor-icon-bundle">
+              <ul>
+                <li class="metaphor-icon">
+                  <img src="images/vip_icon2.png" alt="">
+                </li>
+                <li class="metaphor-desc">설명</li>
+              </ul>
+            </li>
+            <li class="metaphor-icon-bundle">
+              <ul>
+                <li class="metaphor-icon">
+                  <img src="images/vip_icon3.png" alt="">
+                </li>
+                <li class="metaphor-desc">설명</li>
+              </ul>
+            </li>
+            <li class="metaphor-icon-bundle">
+              <ul>
+                <li class="metaphor-icon">
+                  <img src="images/vip_icon4.png" alt="">
+                </li>
+                <li class="metaphor-desc">설명</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section3">
+        <div class="contain">
+          <h2 class="x-large bolder">실시간 VIP 문의 현황</h2>
+          <div class="swiper Swiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item-bundle">
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item-bundle">
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item-bundle">
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item-bundle">
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item-bundle">
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item-bundle">
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                    <li class="item-info">
+                      <ul class="item">
+                        <li class="name">정x기</li>
+                        <li class="title">SILVER</li>
+                        <li class="new">
+                          <img src="images/icon_news.png" alt="">
+                        </li>
+                        <li class="date">2024-02-20</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section4">
+        <div class="contain">
+          <h2 class="x-large bolder">최근 수익 종목</h2>
+          <div class="swiper Swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">금강철강 [0253260]</li>
+                    <li class="tit">+35&#37;</li>
+                    <li class="tit">2024.02.20</li>
+                    <li class="tit">2024.02.24</li>
+                    <li class="tit">30%</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">금강철강 [0253260]</li>
+                    <li class="tit">+35&#37;</li>
+                    <li class="tit">2024.02.20</li>
+                    <li class="tit">2024.02.24</li>
+                    <li class="tit">30%</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">금강철강 [0253260]</li>
+                    <li class="tit">+35&#37;</li>
+                    <li class="tit">2024.02.20</li>
+                    <li class="tit">2024.02.24</li>
+                    <li class="tit">30%</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">금강철강 [0253260]</li>
+                    <li class="tit">+35&#37;</li>
+                    <li class="tit">2024.02.20</li>
+                    <li class="tit">2024.02.24</li>
+                    <li class="tit">30%</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">금강철강 [0253260]</li>
+                    <li class="tit">+35&#37;</li>
+                    <li class="tit">2024.02.20</li>
+                    <li class="tit">2024.02.24</li>
+                    <li class="tit">30%</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">금강철강 [0253260]</li>
+                    <li class="tit">+35&#37;</li>
+                    <li class="tit">2024.02.20</li>
+                    <li class="tit">2024.02.24</li>
+                    <li class="tit">30%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-box"></div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section5"></section>
     </main>
 
@@ -282,22 +847,58 @@
   integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      loop:true,
-    });
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var swiper = new Swiper(".Swiper1", {
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop:true,
+      });
+
+      var swiper = new Swiper(".Swiper2", {
+        slidesPerView : 2,
+        slidesPerGroup : 2,
+        spaceBetween : 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        loop:true,
+      });
+
+      var swiper = new Swiper(".Swiper3", {
+        direction: "vertical",
+        slidesPerView : 5,
+        slidesPerGroup: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop:true,
+      });
+  })
   </script>
   <script src="js/intro.js"></script>
   <script src="js/header.js"></script>
