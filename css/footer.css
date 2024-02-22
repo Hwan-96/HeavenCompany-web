@@ -1,0 +1,223 @@
+footer{
+  font-size: 15px;
+  color: #c4c4c4;
+  line-height: 1.6em;
+}
+@media (max-width: 1024px){
+  footer {
+    font-size: 14px;
+    text-align: center;
+  }
+  #footer {
+    font-size: 13px;
+  }
+}
+
+footer .footer-top{
+  background-color: #313131;
+  color: #fafafa;
+}
+footer .footer-container{
+  background-color: #131313;
+}
+
+footer .contain{
+  padding: 30px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 1024px){
+  footer .contain{
+    max-width: 100%;
+  }
+}
+
+.footer-top .contain .row{
+  display: flex;
+  /* align-items: center; */
+  padding: 0 20px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-image: url(../images/cs_icon.png);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+@media (max-width: 1024px){
+  .footer-top .contain .row{
+    display: flex;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+}
+
+.footer-top .contain .row > div{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media (max-width: 1024px){
+  .footer-top .contain .row .bankinfo{
+    align-items: baseline;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-top .contain .row .bankinfo{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+}
+
+.footer-top .contain .row .bankinfo h3,
+.footer-top .contain .row .csinfo h3{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px){
+  .footer-top .contain .row .bankinfo h3,
+  .footer-top .contain .row .csinfo h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.footer-top .contain .row .bank-num,
+.footer-top .contain .row .csinfo .num{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.footer-top .contain .row .bank{
+  display: flex;
+}
+@media (max-width: 1200px){
+  .footer-top .contain .row .bank{
+    flex-direction: column;
+  }
+}
+.footer-top .contain .row .bank .bank-col{
+  flex: 1;
+  margin: 8px 0;
+}
+.footer-top .contain .row .bank .bank-col li{
+  margin: 8px 0;
+}
+
+.footer-top .contain .row > .csinfo{
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+.footer-top .contain .row > .csinfo h2,
+.footer-top .contain .row > .csinfo h3,
+.footer-top .contain .row > .csinfo .num,
+.footer-top .contain .row > .csinfo p{
+  margin: 4px 0;
+}
+
+@media (max-width: 1200px){
+  .footer-top .contain .row > .csinfo{justify-content: center; gap: 20px;}
+}
+
+@media (max-width: 1024px){
+  .footer-top .contain .row > .csinfo{
+    border-left: none;
+    padding-left: 20px;
+    padding-bottom: 0;
+    margin-top: 20px;
+    gap: 0;
+  }
+}
+
+
+/* footer 하단 */
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px){
+  .footer-content{
+    flex-direction: column;
+  }
+}
+.footer-content .foot-logo{
+  width: 150px;
+  height: 80px;
+}
+.footer-content .foot-logo img{
+  width: 100%;
+}
+.footer-content .foot-info .foot-menu ul{
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 1024px){
+  .footer-content .foot-info .foot-menu ul{
+    justify-content: center;
+    font-size: 14px;
+    gap: 10px;
+  }
+}
+@media (max-width: 860px){
+  .footer-content .foot-info .foot-menu ul{
+    justify-content: center;
+    font-size: 13px;
+    gap: 10px;
+  }
+}
+@media (max-width: 280px){
+  .footer-content .foot-info .foot-menu ul{
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column;
+  }
+}
+
+address{font-style: normal;}
+
+footer .bar{padding: 0 10px;}
+
+.text-brown{
+  color: #af6d09;
+  font-weight: 800;
+}
+
+@media (max-width: 1024px){
+  footer .bar {
+    padding: 0 7px;
+  }
+}
+@media (max-width: 860px){
+  footer .bar {
+    padding: 0;
+    display: block;
+  }
+  footer .br{
+    display: block;
+    font-size: 0;
+    line-height: 0;
+  }
+}
+
+.foot-desc{
+  color: #fafafa;
+  font-weight: 600;
+}

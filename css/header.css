@@ -516,6 +516,7 @@
   border-radius: 0 200px 200px;
   overflow: hidden;
 }
+.root_daum_roughmap .wrap_controllers{display: none;}
 
 .nav-open-wrap .nav-open-inner-wrap .pc-menu-map .grid-4{
   grid-template-columns: repeat(4, 1fr);

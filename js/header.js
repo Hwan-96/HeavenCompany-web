@@ -3,19 +3,19 @@ document.addEventListener('DOMContentLoaded', function() {
   // header 확장
   window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
-    console.log(scrollTop);
+    // console.log(scrollTop);
     
     let headerInner = document.querySelector(".header-inner");
     let fixedWrap = document.querySelector(".fixed-wrap-bg");
     
     if (scrollTop >= 500) {
       headerInner.classList.add("active");
-      // fixedWrap.classList.add("active");
     } else {
       headerInner.classList.remove("active");
-      // fixedWrap.classList.remove("active");
     }
   });
+
+  // console.log(document.querySelector('.menu-list-wrap .menu-list'));
 
   // header menu gsap
   const menuBtn = document.querySelector('.menu-btn-wrap');

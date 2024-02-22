@@ -31,16 +31,17 @@
   <meta name="msapplication-TileImage" content="images/logos/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <script defer type="module" src="js/env.js"></script>
-  <script defer type="module" src="js/map.js"></script>
-  
+
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
@@ -174,9 +175,17 @@
                 </div>
                 <div class="grid grid-3">
                   <div class="map-wrap">
-                    <div class="mapCanvas" style="width: 100%; height: 100%;">
-                      <div id="map" style="width: 100%; height: 100%;"></div>
-                    </div>
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <div id="daumRoughmapContainer1708484883968" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    <script charset="UTF-8">
+                      new daum.roughmap.Lander({
+                        "timestamp" : "1708484883968",
+                        "key" : "2i74t",
+                        "mapWidth" : "780",
+                        "mapHeight" : "400"
+                      }).render();
+                    </script>
                   </div>
                 </div>
                 <div class="grid grid-4">
@@ -224,17 +233,11 @@
 
       <section class="section section1">
         <div class="grid-container">
-          <div class="grid-content"
-          data-aos="fade-right"
-          data-aos-easing="ease-in-sine"
-          data-aos-anchor-placement="top-center">
+          <div class="grid-content">
             <img src="images/main01.png" alt="">
           </div>
 
-          <div class="grid-content"
-          data-aos="fade-left"
-          data-aos-easing="ease-in-sine"
-          data-aos-anchor-placement="top-center">
+          <div class="grid-content">
             <p class="grid-title">
               <span class="xx-large bolder">헤븐컴퍼니,</span>
               <span class="xx-large bolder">프라이빗 투자그룹</span>
@@ -251,10 +254,7 @@
             <!-- <img src="images/logos/apple-icon-180x180.png" alt=""> -->
           </div>
 
-          <div class="grid-content"
-          data-aos="fade-up-left"
-          data-aos-easing="ease-in-sine"
-          data-aos-anchor-placement="top-center">
+          <div class="grid-content">
             <img src="images/main02.png" alt="">
             <p class="grid-desc large desc-odd">
               누적수익률
@@ -262,10 +262,7 @@
             </p>
           </div>
 
-          <div class="grid-content"
-          data-aos="fade-down-right"
-          data-aos-easing="ease-in-sine"
-          data-aos-anchor-placement="bottom-bottom">
+          <div class="grid-content">
             <img src="images/main03.png" alt="">
             <p class="grid-desc large desc-even">
               적중률
@@ -281,20 +278,14 @@
             <!-- <img src="images/logos/apple-icon-180x180.png" alt=""> -->
           </div>
 
-          <div class="grid-content"
-          data-aos="fade-down-left"
-          data-aos-easing="ease-in-sine"
-          data-aos-anchor-placement="center-center">
+          <div class="grid-content">
             <img src="images/main04.png" alt="">
             <p class="grid-desc large desc-odd">
               평균수익률
               <strong class="xx-large bolder">218.8&#37;</strong>
             </p>
           </div>
-          <div class="grid-content"
-          data-aos="fade-down-right"
-          data-aos-easing="ease-in-sine"
-          data-aos-anchor-placement="bottom-bottom">
+          <div class="grid-content">
             <img src="images/main05.png" alt="">
             <p class="grid-desc large desc-even">
               누적회원수
@@ -751,8 +742,17 @@
       </section>
 
       <section class="section section4">
-        <div class="contain">
+        <div class="contain pc-sec4">
           <h2 class="x-large bolder">최근 수익 종목</h2>
+          <div>
+            <ul class="section4-tit">
+              <li class="bold">종목명</li>
+              <li class="bold">상승률</li>
+              <li class="bold">매수일</li>
+              <li class="bold">매도일</li>
+              <li class="bold">비중</li>
+            </ul>
+          </div>
           <div class="swiper Swiper3">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -825,83 +825,459 @@
             <div class="content-box"></div>
           </div>
         </div>
+
+        <div class="contain mo-sec4">
+          <h2 class="x-large bolder">최근 수익 종목</h2>
+          <div class="swiper Swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">
+                      <strong>종목명</strong>
+                      금강철강 [0253260]
+                    </li>
+                    <li class="tit">
+                      <strong>상승률</strong>
+                      +35&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>비중</strong>
+                      30&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>매수일</strong>
+                      2024.02.20
+                    </li>
+                    <li class="tit">
+                      <strong>매도일</strong>
+                      2024.02.24
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">
+                      <strong>종목명</strong>
+                      금강철강 [0253260]
+                    </li>
+                    <li class="tit">
+                      <strong>상승률</strong>
+                      +35&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>비중</strong>
+                      30&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>매수일</strong>
+                      2024.02.20
+                    </li>
+                    <li class="tit">
+                      <strong>매도일</strong>
+                      2024.02.24
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">
+                      <strong>종목명</strong>
+                      금강철강 [0253260]
+                    </li>
+                    <li class="tit">
+                      <strong>상승률</strong>
+                      +35&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>비중</strong>
+                      30&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>매수일</strong>
+                      2024.02.20
+                    </li>
+                    <li class="tit">
+                      <strong>매도일</strong>
+                      2024.02.24
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">
+                      <strong>종목명</strong>
+                      금강철강 [0253260]
+                    </li>
+                    <li class="tit">
+                      <strong>상승률</strong>
+                      +35&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>비중</strong>
+                      30&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>매수일</strong>
+                      2024.02.20
+                    </li>
+                    <li class="tit">
+                      <strong>매도일</strong>
+                      2024.02.24
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-all">
+                  <ul class="item">
+                    <li class="tit">
+                      <strong>종목명</strong>
+                      금강철강 [0253260]
+                    </li>
+                    <li class="tit">
+                      <strong>상승률</strong>
+                      +35&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>비중</strong>
+                      30&#37;
+                    </li>
+                    <li class="tit">
+                      <strong>매수일</strong>
+                      2024.02.20
+                    </li>
+                    <li class="tit">
+                      <strong>매도일</strong>
+                      2024.02.24
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="section section5"></section>
+      <section class="section section5">
+        <div class="contain">
+          <h2 class="x-large bolder">영상 콘텐츠</h2>
+          <ul class="movie-wrap">
+            <li class="movie-content">
+              <a href="#none">
+                <ul class="movie">
+                  <li class="thumb">
+                    <img src="images/tube-thumb.jpg" alt="">
+                    <div class="thumb-overlay">
+                      <p>
+                        보러가기
+                      </p>
+                    </div>
+                  </li>
+                  <li class="tit bold large">타이틀</li>
+                  <li class="desc">간략한 내용</li>
+                </ul>
+              </a>
+            </li>
+            <li class="movie-content">
+              <a href="#none">
+                <ul class="movie">
+                  <li class="thumb">
+                    <img src="images/tube-thumb.jpg" alt="">
+                    <div class="thumb-overlay">
+                      <p>
+                        보러가기
+                      </p>
+                    </div>
+                  </li>
+                  <li class="tit bold large">타이틀</li>
+                  <li class="desc">간략한 내용</li>
+                </ul>
+              </a>
+            </li>
+            <li class="movie-content">
+              <a href="#none">
+                <ul class="movie">
+                  <li class="thumb">
+                    <img src="images/tube-thumb.jpg" alt="">
+                    <div class="thumb-overlay">
+                      <p>
+                        보러가기
+                      </p>
+                    </div>
+                  </li>
+                  <li class="tit bold large">타이틀</li>
+                  <li class="desc">간략한 내용</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mo-contain">
+          <h2 class="x-large bolder">영상 콘텐츠</h2>
+          <div class="swiper Swiper4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="movie-wrap">
+                  <li class="movie-content">
+                    <a href="#none">
+                      <ul class="movie">
+                        <li class="thumb">
+                          <img src="images/tube-thumb.jpg" alt="">
+                          <div class="thumb-overlay">
+                            <p>
+                              보러가기
+                            </p>
+                          </div>
+                        </li>
+                        <li class="tit bold large">타이틀</li>
+                        <li class="desc">간략한 내용</li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="movie-wrap">
+                  <li class="movie-content">
+                    <a href="#none">
+                      <ul class="movie">
+                        <li class="thumb">
+                          <img src="images/tube-thumb.jpg" alt="">
+                          <div class="thumb-overlay">
+                            <p>
+                              보러가기
+                            </p>
+                          </div>
+                        </li>
+                        <li class="tit bold large">타이틀</li>
+                        <li class="desc">간략한 내용</li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="movie-wrap">
+                  <li class="movie-content">
+                    <a href="#none">
+                      <ul class="movie">
+                        <li class="thumb">
+                          <img src="images/tube-thumb.jpg" alt="">
+                          <div class="thumb-overlay">
+                            <p>
+                              보러가기
+                            </p>
+                          </div>
+                        </li>
+                        <li class="tit bold large">타이틀</li>
+                        <li class="desc">간략한 내용</li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="section section6">
+        <div class="tab-wrap">
+          <div class="tab-container">
+            <div class="tab-inner tab-left">
+              <div class="tab-menu">
+                <ul class="tab-btn tab-btn-left">
+                  <li class="active tab-tit">공지사항</li>
+                  <li class="tab-tit">투자전략</li>
+                  <li>
+                    <a href="#none">
+                      <span class="material-symbols-outlined">add</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <ul id="tab-content-l-1" class="tab-content-inner active">
+                  <li><b>[공지]</b><span>2016-01-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                </ul>
+                
+                <ul id="tab-content-l-2" class="tab-content-inner">
+                  <li><b>[공지]</b><span>2016-01-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                  <li><em>[공지]</em><span>2023-09-04</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-inner tab-right">
+              <div class="tab-menu">
+                <ul class="tab-btn tab-btn-right">
+                  <li class="active tab-tit">고객후기</li>
+                  <li class="tab-tit">수익인증</li>
+                  <li>
+                    <a href="#none">
+                      <span class="material-symbols-outlined">add</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <ul id="tab-content-r-1" class="tab-content-inner active">
+                  <li>
+                    <img src="images/tube-thumb.jpg" alt="news">
+                    <p><em>[고객후기]</em></p>
+                    <span>2023-09-01</span>
+                  </li>
+                  <li>
+                    <img src="images/tube-thumb.jpg" alt="news">
+                    <p><em>[고객후기]</em></p>
+                    <span>2023-09-01</span>
+                  </li>
+                </ul>
+                
+                <ul id="tab-content-r-2" class="tab-content-inner">
+                  <li>
+                    <img src="images/tube-thumb.jpg" alt="news">
+                    <p><em>[고객후기]</em></p>
+                    <span>2023-09-01</span>
+                  </li>
+                  <li>
+                    <img src="images/tube-thumb.jpg" alt="news">
+                    <p><em>[고객후기]</em></p>
+                    <span>2023-09-01</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
+      <div class="footer-top">
+        <div class="contain">
+          <div class="row">
+            <div class="bankinfo">
+              <h2 class="x-large bolder">BANK INFO</h2>
+              <h3>(주) 헤븐컴퍼니 전용계좌</h3>
+              <div class="bank">
+                <ul class="bank-col">
+                  <li class="bank-logo">
+                    <img src="images/kb.png" alt="국민은행">
+                  </li>
+                  <li class="bank-num">
+                    <p>450937-01-008363</p>
+                  </li>
+                  <li>
+                    <span>예금주 : (주)헤븐컴퍼니</span>
+                  </li>
+                </ul>
+                <ul class="bank-col">
+                  <li class="bank-logo">
+                    <img src="images/sinhan.png" alt="신한은행">
+                  </li>
+                  <li class="bank-num">
+                    <p>100-033-428550</p>
+                  </li>
+                  <li>
+                    <span>예금주 : (주)헤븐컴퍼니</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="csinfo">
+              <h2 class="x-large bolder">CS CENTER</h2>
+              <h3>(주) 헤븐컴퍼니 고객센터</h3>
+              <div class="num">
+                <a href="tel:1644-9177">1644-9177</a>
+              </div>
+              <p>
+                <span>운영시간</span>
+                <span>09:00 ~ 18:00</span>
+              </p>
+              <p>
+                <span>점심시간</span>
+                <span>11:30 ~ 13:00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       
+      <div class="footer-container">
+        <div class="contain">
+          <div class="footer-content">
+            <div class="foot-logo">
+              <img src="images/logos/Logo-horizontal.png" alt="">
+            </div>
+            <div class="foot-info">
+              <div class="foot-menu">
+                <ul>
+                  <li><a href="#none">개인정보처리방침</a></li>
+                  <li><a href="#none">서비스이용약관</a></li>
+                  <li><a href="#none">이메일무단수집거부</a></li>
+                </ul>
+              </div>
+              <address>
+                회사명 : (주)헤븐컴퍼니
+                <span class="bar"></span>
+                대표 : 천지훈
+                <span class="bar"></span>
+                사업자등록번호 : 756-86-01111
+                <span class="bar"></span>
+                통신판매신고번호 : 제2019-서울강남-00917호
+                <br>
+						    주소 : 서울시 강남구 청담동 13-24 502호
+                <span class="bar"></span>
+                개인정보관리책임자 : 정민우
+                <br>
+                입금계좌 : 국민은행
+                <span class="text-brown">450937-01-008363</span>
+                (주)헤븐컴퍼니 
+                <span class="br"></span>
+                신한은행 
+                <span class="text-brown">100-033-428550</span>
+                (주)헤븐컴퍼니 
+                <span class="bar"></span>
+                대표번호 : 1644-9177
+                <br>
+                Copyright © Heaven Company. All Rights Reserved.
+              </address>
+              <p class="foot-desc">본 사이트에서 제공되는 모든 정보는 투자판단의 참고자료이며, 서비스 이용에 따른 최종 책임은 이용자에게 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
-  <script src="js/jquery-3.7.0.min.js"></script>
-  <script src="js/jquery-migrate-1.4.1.min.js"></script>
-  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-  integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-  integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
-  integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var swiper = new Swiper(".Swiper1", {
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          type: "progressbar",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        loop:true,
-      });
-
-      var swiper = new Swiper(".Swiper2", {
-        slidesPerView : 2,
-        slidesPerGroup : 2,
-        spaceBetween : 30,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-        loop:true,
-      });
-
-      var swiper = new Swiper(".Swiper3", {
-        direction: "vertical",
-        slidesPerView : 5,
-        slidesPerGroup: 1,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        loop:true,
-      });
-  })
-  </script>
+  <script src="js/swiperOption.js"></script>
   <script src="js/intro.js"></script>
+  <script src="js/index.js"></script>
   <script src="js/header.js"></script>
-  
 </body>
 </html>
