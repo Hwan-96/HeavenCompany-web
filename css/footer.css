@@ -71,12 +71,23 @@ footer .contain{
     justify-content: left;
     flex-direction: column;
     text-align: left;
-    padding-left: 20px;
     padding-bottom: 20px;
   }
   .footer-top .contain .row .bankinfo{
     border-bottom: 1px solid #ccc;
     width: 100%;
+  }
+  .footer-top .contain .row .bankinfo h3,
+  .footer-top .contain .row .bankinfo h2,
+  .footer-top .contain .row .bankinfo .bank{
+    padding-left: 20px;
+  }
+}
+@media (max-width: 300px){
+  .footer-top .contain .row .bankinfo h3,
+  .footer-top .contain .row .bankinfo h2,
+  .footer-top .contain .row .bankinfo .bank{
+    padding-left: 5px;
   }
 }
 
@@ -120,6 +131,7 @@ footer .contain{
   border-left: 1px solid #ccc;
   padding-left: 20px;
 }
+
 .footer-top .contain .row > .csinfo h2,
 .footer-top .contain .row > .csinfo h3,
 .footer-top .contain .row > .csinfo .num,
@@ -138,6 +150,11 @@ footer .contain{
     padding-bottom: 0;
     margin-top: 20px;
     gap: 0;
+  }
+}
+@media (max-width: 300px){
+  .footer-top .contain .row > .csinfo{
+    padding-left: 10px;
   }
 }
 

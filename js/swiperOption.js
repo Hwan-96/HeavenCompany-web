@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   const swiper1 = new Swiper(".Swiper1", {
+    effect : 'fade',
     centeredSlides: true,
     autoplay: {
-      delay: 4000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     pagination: {
